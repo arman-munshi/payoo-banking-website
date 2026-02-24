@@ -17,7 +17,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
         alert("login Success");
 
         // connect to the home.html page
-        window.location.assign("/home.html");
+        window.location.assign("home.html");
         
     }
     else {
