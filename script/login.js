@@ -4,7 +4,8 @@ document.getElementById("login-btn").addEventListener("click", function () {
   //    1. get the mobile number input
   const numberInput = document.getElementById("input-number");
   const contactNumber = numberInput.value;
-  console.log(contactNumber);
+    console.log(contactNumber);
+    
 
   // 2.get the pin input
   const inputPin = document.getElementById("input-pin");
@@ -17,6 +18,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
 
         // connect to the home.html page
         window.location.assign("/home.html");
+        
     }
     else {
         alert("login Failed");
