@@ -27,15 +27,16 @@ function showOnly(id) {
   const addmoney = document.getElementById("add-money");
   const cashout = document.getElementById("cashout");
   const transaction = document.getElementById("history");
-//   console.log(`add Money- ${addmoney} , cashout - ${cashout}`);
+  const latestPayment = document.getElementById("latest-payment");
+  //   console.log(`add Money- ${addmoney} , cashout - ${cashout}`);
 
   // hide all
-    addmoney.classList.add("hidden");
-    cashout.classList.add("hidden");
-    transaction.classList.add("hidden");
-    
-    // id wala element show me
-    const selected = document.getElementById(id);
-    selected.classList.remove("hidden")
+  addmoney.classList.add("hidden");
+  cashout.classList.add("hidden");
+  transaction.classList.add("hidden");
+  latestPayment.classList.add("hidden");
 
+  // id wala element show me
+  const selected = document.getElementById(id);
+  selected.classList.remove("hidden");
 }

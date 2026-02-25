@@ -72,11 +72,17 @@
       <!-- all button section -->
 
       <div class="buttons grid grid-cols-3 gap-3">
-        <button onclick="showOnly('add-money')" class="btn flex-col h-full py- btn-primary btn-soft">
+        <button
+          onclick="showOnly('add-money')"
+          class="btn flex-col h-full py- btn-primary btn-soft"
+        >
           <img src="assets/opt-1.png" alt="" />
           <p class="text-neutral/50">Add Money</p>
         </button>
-        <button onclick="showOnly('cashout')" class="btn flex-col h-full py-4 btn-primary btn-soft">
+        <button
+          onclick="showOnly('cashout')"
+          class="btn flex-col h-full py-4 btn-primary btn-soft"
+        >
           <img src="assets/opt-2.png" alt="" />
           <p class="text-neutral/50">Cashout</p>
         </button>
@@ -92,7 +98,10 @@
           <img src="assets/opt-5.png" alt="" />
           <p class="text-neutral/50">Pay Bill</p>
         </button>
-        <button onclick="showOnly('history')" class="btn flex-col h-full py-4 btn-primary btn-soft">
+        <button
+          onclick="showOnly('history')"
+          class="btn flex-col h-full py-4 btn-primary btn-soft"
+        >
           <img src="assets/opt-6.png" alt="" />
           <p class="text-neutral/50">Transactions</p>
         </button>
@@ -201,7 +210,6 @@
       </div>
     </section>
 
-    
     <!-- Transactions history  -->
 
     <section id="history" class="w-11/12 mx-auto py-5 hidden">
@@ -209,8 +217,72 @@
         <h2 class="text-xl font-bold mb-5">Transaction History</h2>
         <p class="text-neutral/50">View All</p>
       </div>
-      <div class="space-y-5" id="history-container">
-        
+      <div class="space-y-5" id="history-container"></div>
+    </section>
+
+    <!-- latest payment section -->
+    <section id="latest-payment" class="w-11/12 mx-auto py-5">
+      <div class="flex justify-between">
+        <h2 class="text-xl font-bold mb-5">Latest Payment</h2>
+        <p class="text-neutral/50">View All</p>
+      </div>
+      <div class="space-y-5">
+        <div class="flex justify-between p-3 bg-base-100 rounded-xl shadow">
+          <div class="flex gap-3 items-center">
+            <div class="bg-base-300 p-2 rounded-full">
+              <img src="assets/opt-5.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-bold">Electricity Bill</h2>
+              <p class="text-neutral/50">Today 01:44 AM</p>
+            </div>
+          </div>
+          <button class="text-neutral/50">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+        <div class="flex justify-between p-3 bg-base-100 rounded-xl shadow">
+          <div class="flex gap-3 items-center">
+            <div class="bg-base-300 p-2 rounded-full">
+              <img src="assets/opt-1.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-bold">Bank Deposit</h2>
+              <p class="text-neutral/50">Today 01:44 AM</p>
+            </div>
+          </div>
+          <button class="text-neutral/50">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+        <div class="flex justify-between p-3 bg-base-100 rounded-xl shadow">
+          <div class="flex gap-3 items-center">
+            <div class="bg-base-300 p-2 rounded-full">
+              <img src="assets/opt-1.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-bold">Mobile Recharge</h2>
+              <p class="text-neutral/50">Today 01:44 AM</p>
+            </div>
+          </div>
+          <button class="text-neutral/50">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+        <div class="flex justify-between p-3 bg-base-100 rounded-xl shadow">
+          <div class="flex gap-3 items-center">
+            <div class="bg-base-300 p-2 rounded-full">
+              <img src="assets/opt-5.png" alt="" />
+            </div>
+            <div>
+              <h2 class="font-bold">Gas Bill</h2>
+              <p class="text-neutral/50">Today 01:44 AM</p>
+            </div>
+          </div>
+          <button class="text-neutral/50">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
       </div>
     </section>
 
