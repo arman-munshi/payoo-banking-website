@@ -1,57 +1,33 @@
 document.getElementById("cashout-btn").addEventListener("click", function () {
-    // get the agent number
-    const cashoutNumber = getValueFromInput("cashout-number");
-    if (cashoutNumber.length !== 11) {
-        alert("Invalid Number");
-        return;
-    }
-    
-    // get the amount 
-    const cashoutAmount = getValueFromInput("cashout-amount");
-    
-    // get the current balance
-    const currentBalance = getBalance();
+  // get the agent number
+  const cashoutNumber = getValueFromInput("cashout-number");
+  if (cashoutNumber.length !== 11) {
+    alert("Invalid Number");
+    return;
+  }
 
-    // calculate the balance
-    const newBalance = currentBalance - Number(cashoutAmount);
-    if (newBalance < 0) {
-        alert("Invalid Amount");
-        return
-    };
+  // get the amount
+  const cashoutAmount = getValueFromInput("cashout-amount");
 
-    const pin = getValueFromInput("cashout-pin");
-    if (pin === "1234") {
-        alert("Cashout Successful");
-        setBalance(newBalance);
-    }
-    else {
-        alert("Invalid Pin")
-        return;
-    }
+  // get the current balance
+  const currentBalance = getBalance();
 
+  // calculate the balance
+  const newBalance = currentBalance - Number(cashoutAmount);
+  if (newBalance < 0) {
+    alert("Invalid Amount");
+    return;
+  }
+
+  const pin = getValueFromInput("cashout-pin");
+  if (pin === "1234") {
+    alert("Cashout Successful");
+    setBalance(newBalance);
+  } else {
+    alert("Invalid Pin");
+    return;
+  }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // -----------------------------------------------------
 // not optimize code ,here have meany repeatative code .
