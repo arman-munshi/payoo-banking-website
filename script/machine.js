@@ -27,12 +27,15 @@ function showOnly(id) {
   const addmoney = document.getElementById("add-money");
   const cashout = document.getElementById("cashout");
   const transaction = document.getElementById("history");
+  const sendmoney = document.getElementById("send-money");
   const latestPayment = document.getElementById("latest-payment");
   //   console.log(`add Money- ${addmoney} , cashout - ${cashout}`);
 
   // hide all
   addmoney.classList.add("hidden");
   cashout.classList.add("hidden");
+  sendmoney.classList.add("hidden");
+
   transaction.classList.add("hidden");
   latestPayment.classList.add("hidden");
 
