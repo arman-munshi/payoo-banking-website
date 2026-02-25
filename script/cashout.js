@@ -21,8 +21,10 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
 
   const pin = getValueFromInput("cashout-pin");
   if (pin === "1234") {
-    alert("Cashout Successful");
+      alert("CashOut Successful");
+      
       setBalance(newBalance);
+
       
     // cashout transactions history
     const history = document.getElementById("history-container");

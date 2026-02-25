@@ -21,7 +21,8 @@ document.getElementById("send-money-btn").addEventListener("click", function () 
 
   const pin = getValueFromInput("send-money-pin");
   if (pin === "1234") {
-    alert("Sendmoney Successful");
+      alert(`send Money Success to ${sendMoneyNumber} at ${new Date()}`);
+      
       setBalance(newBalance);
       
     // send money transactions history
