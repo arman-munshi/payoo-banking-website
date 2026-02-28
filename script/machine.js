@@ -28,6 +28,7 @@ function showOnly(id) {
   const cashout = document.getElementById("cashout");
   const transaction = document.getElementById("history");
   const sendmoney = document.getElementById("send-money");
+  const paybill = document.getElementById("pay-bill")
   const latestPayment = document.getElementById("latest-payment");
   //   console.log(`add Money- ${addmoney} , cashout - ${cashout}`);
 
@@ -35,6 +36,7 @@ function showOnly(id) {
   addmoney.classList.add("hidden");
   cashout.classList.add("hidden");
   sendmoney.classList.add("hidden");
+  paybill.classList.add("hidden");
 
   transaction.classList.add("hidden");
   latestPayment.classList.add("hidden");
